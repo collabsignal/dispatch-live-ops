@@ -61,14 +61,6 @@ Starting point:
 - `src/server/app.ts`
 - `src/server/dispatch.test.ts`
 
-## What We Evaluate
-
-- How quickly you form and test hypotheses.
-- Whether you measure before optimizing.
-- How you collaborate with AI: context quality, skepticism, and verification.
-- Whether your tests target business behavior rather than implementation trivia.
-- Code clarity and maintainability.
-
 ## Setup
 
 ```bash

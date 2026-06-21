@@ -1,6 +1,6 @@
 # DispatchLive Ops Challenge
 
-DispatchLive is a starter project for evaluating candidates on realtime delivery operations, React performance, API correctness, and SDET automation. The app simulates 500 active riders, live location updates every 5 seconds, and a dispatch dashboard backed by a small Express API.
+DispatchLive is a starter project for realtime delivery operations, React performance, API correctness, and SDET automation practice. The app simulates 500 active riders, live location updates every 5 seconds, and a dispatch dashboard backed by a small Express API.
 
 ## Quick Start
 
@@ -49,7 +49,7 @@ npm run dev:web       # React app only, port 5173
 src/
   client/
     App.tsx                 # React dashboard
-    performance.ts          # Current slow row aggregation path
+    performance.ts          # Dashboard row aggregation
     useLiveLocations.ts     # SSE subscription and location merge helper
   server/
     app.ts                  # Express routes
@@ -58,7 +58,3 @@ src/
   shared/
     types.ts                # Shared API and domain types
 ```
-
-## Notes for Interviewers
-
-The most productive signal tends to come from watching how candidates use AI to profile and reduce the client-side render path. Strong candidates usually measure first, find the repeated full-order scans in `src/client/performance.ts`, index order data by courier/status, and verify the realtime update path still works.
