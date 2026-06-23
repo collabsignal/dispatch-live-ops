@@ -16,7 +16,7 @@ Expected outcomes:
 
 - The dashboard still shows courier status, load, active orders, and nearby pending orders.
 - Location updates every 5 seconds do not trigger unnecessary full recomputation.
-- The solution is readable and testable. Add or update tests for the aggregation logic you change.
+- Your implementation is readable and testable. Add or update tests for the aggregation logic you change.
 - Document the before/after behavior in your final notes.
 
 Starting point:
